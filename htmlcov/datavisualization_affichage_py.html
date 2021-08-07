@@ -1,0 +1,365 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <title>Coverage for datavisualization\affichage.py: 47%</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="jquery.isonscreen.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>datavisualization\affichage.py</b> :
+            <span class="pc_cov">47%</span>
+        </h1>
+
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+
+        <h2 class="stats">
+            68 statements &nbsp;
+            <span class="run hide_run shortkey_r button_toggle_run">32 run</span>
+            <span class="mis shortkey_m button_toggle_mis">36 missing</span>
+            <span class="exc shortkey_x button_toggle_exc">0 excluded</span>
+
+            
+        </h2>
+    </div>
+</div>
+
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">r</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">p</span> &nbsp; toggle line displays
+    </p>
+    <p class="keyhelp">
+        <span class="key">j</span>
+        <span class="key">k</span> &nbsp; next/prev highlighted chunk
+    </p>
+    <p class="keyhelp">
+        <span class="key">0</span> &nbsp; (zero) top of page
+    </p>
+    <p class="keyhelp">
+        <span class="key">1</span> &nbsp; (one) first highlighted chunk
+    </p>
+    </div>
+</div>
+
+<div id="source">
+    <table>
+        <tr>
+            <td class="linenos">
+<p id="n1" class="pln"><a href="#n1">1</a></p>
+<p id="n2" class="pln"><a href="#n2">2</a></p>
+<p id="n3" class="pln"><a href="#n3">3</a></p>
+<p id="n4" class="stm run hide_run"><a href="#n4">4</a></p>
+<p id="n5" class="stm run hide_run"><a href="#n5">5</a></p>
+<p id="n6" class="stm run hide_run"><a href="#n6">6</a></p>
+<p id="n7" class="pln"><a href="#n7">7</a></p>
+<p id="n8" class="stm run hide_run"><a href="#n8">8</a></p>
+<p id="n9" class="stm run hide_run"><a href="#n9">9</a></p>
+<p id="n10" class="pln"><a href="#n10">10</a></p>
+<p id="n11" class="stm run hide_run"><a href="#n11">11</a></p>
+<p id="n12" class="pln"><a href="#n12">12</a></p>
+<p id="n13" class="pln"><a href="#n13">13</a></p>
+<p id="n14" class="pln"><a href="#n14">14</a></p>
+<p id="n15" class="pln"><a href="#n15">15</a></p>
+<p id="n16" class="stm run hide_run"><a href="#n16">16</a></p>
+<p id="n17" class="stm run hide_run"><a href="#n17">17</a></p>
+<p id="n18" class="pln"><a href="#n18">18</a></p>
+<p id="n19" class="stm run hide_run"><a href="#n19">19</a></p>
+<p id="n20" class="stm run hide_run"><a href="#n20">20</a></p>
+<p id="n21" class="pln"><a href="#n21">21</a></p>
+<p id="n22" class="stm run hide_run"><a href="#n22">22</a></p>
+<p id="n23" class="pln"><a href="#n23">23</a></p>
+<p id="n24" class="stm run hide_run"><a href="#n24">24</a></p>
+<p id="n25" class="stm run hide_run"><a href="#n25">25</a></p>
+<p id="n26" class="stm run hide_run"><a href="#n26">26</a></p>
+<p id="n27" class="stm run hide_run"><a href="#n27">27</a></p>
+<p id="n28" class="stm run hide_run"><a href="#n28">28</a></p>
+<p id="n29" class="stm run hide_run"><a href="#n29">29</a></p>
+<p id="n30" class="pln"><a href="#n30">30</a></p>
+<p id="n31" class="stm run hide_run"><a href="#n31">31</a></p>
+<p id="n32" class="pln"><a href="#n32">32</a></p>
+<p id="n33" class="pln"><a href="#n33">33</a></p>
+<p id="n34" class="stm run hide_run"><a href="#n34">34</a></p>
+<p id="n35" class="stm run hide_run"><a href="#n35">35</a></p>
+<p id="n36" class="stm run hide_run"><a href="#n36">36</a></p>
+<p id="n37" class="stm run hide_run"><a href="#n37">37</a></p>
+<p id="n38" class="stm run hide_run"><a href="#n38">38</a></p>
+<p id="n39" class="stm run hide_run"><a href="#n39">39</a></p>
+<p id="n40" class="pln"><a href="#n40">40</a></p>
+<p id="n41" class="stm run hide_run"><a href="#n41">41</a></p>
+<p id="n42" class="pln"><a href="#n42">42</a></p>
+<p id="n43" class="stm run hide_run"><a href="#n43">43</a></p>
+<p id="n44" class="pln"><a href="#n44">44</a></p>
+<p id="n45" class="stm run hide_run"><a href="#n45">45</a></p>
+<p id="n46" class="pln"><a href="#n46">46</a></p>
+<p id="n47" class="pln"><a href="#n47">47</a></p>
+<p id="n48" class="pln"><a href="#n48">48</a></p>
+<p id="n49" class="pln"><a href="#n49">49</a></p>
+<p id="n50" class="pln"><a href="#n50">50</a></p>
+<p id="n51" class="pln"><a href="#n51">51</a></p>
+<p id="n52" class="pln"><a href="#n52">52</a></p>
+<p id="n53" class="pln"><a href="#n53">53</a></p>
+<p id="n54" class="pln"><a href="#n54">54</a></p>
+<p id="n55" class="pln"><a href="#n55">55</a></p>
+<p id="n56" class="stm run hide_run"><a href="#n56">56</a></p>
+<p id="n57" class="pln"><a href="#n57">57</a></p>
+<p id="n58" class="pln"><a href="#n58">58</a></p>
+<p id="n59" class="pln"><a href="#n59">59</a></p>
+<p id="n60" class="pln"><a href="#n60">60</a></p>
+<p id="n61" class="pln"><a href="#n61">61</a></p>
+<p id="n62" class="pln"><a href="#n62">62</a></p>
+<p id="n63" class="pln"><a href="#n63">63</a></p>
+<p id="n64" class="pln"><a href="#n64">64</a></p>
+<p id="n65" class="pln"><a href="#n65">65</a></p>
+<p id="n66" class="pln"><a href="#n66">66</a></p>
+<p id="n67" class="pln"><a href="#n67">67</a></p>
+<p id="n68" class="pln"><a href="#n68">68</a></p>
+<p id="n69" class="pln"><a href="#n69">69</a></p>
+<p id="n70" class="stm run hide_run"><a href="#n70">70</a></p>
+<p id="n71" class="pln"><a href="#n71">71</a></p>
+<p id="n72" class="stm run hide_run"><a href="#n72">72</a></p>
+<p id="n73" class="stm mis"><a href="#n73">73</a></p>
+<p id="n74" class="stm mis"><a href="#n74">74</a></p>
+<p id="n75" class="stm mis"><a href="#n75">75</a></p>
+<p id="n76" class="stm mis"><a href="#n76">76</a></p>
+<p id="n77" class="stm mis"><a href="#n77">77</a></p>
+<p id="n78" class="stm mis"><a href="#n78">78</a></p>
+<p id="n79" class="pln"><a href="#n79">79</a></p>
+<p id="n80" class="stm mis"><a href="#n80">80</a></p>
+<p id="n81" class="stm mis"><a href="#n81">81</a></p>
+<p id="n82" class="stm mis"><a href="#n82">82</a></p>
+<p id="n83" class="pln"><a href="#n83">83</a></p>
+<p id="n84" class="stm mis"><a href="#n84">84</a></p>
+<p id="n85" class="stm mis"><a href="#n85">85</a></p>
+<p id="n86" class="pln"><a href="#n86">86</a></p>
+<p id="n87" class="stm mis"><a href="#n87">87</a></p>
+<p id="n88" class="stm mis"><a href="#n88">88</a></p>
+<p id="n89" class="stm mis"><a href="#n89">89</a></p>
+<p id="n90" class="pln"><a href="#n90">90</a></p>
+<p id="n91" class="stm mis"><a href="#n91">91</a></p>
+<p id="n92" class="stm mis"><a href="#n92">92</a></p>
+<p id="n93" class="stm mis"><a href="#n93">93</a></p>
+<p id="n94" class="pln"><a href="#n94">94</a></p>
+<p id="n95" class="pln"><a href="#n95">95</a></p>
+<p id="n96" class="stm mis"><a href="#n96">96</a></p>
+<p id="n97" class="pln"><a href="#n97">97</a></p>
+<p id="n98" class="pln"><a href="#n98">98</a></p>
+<p id="n99" class="stm run hide_run"><a href="#n99">99</a></p>
+<p id="n100" class="pln"><a href="#n100">100</a></p>
+<p id="n101" class="stm mis"><a href="#n101">101</a></p>
+<p id="n102" class="pln"><a href="#n102">102</a></p>
+<p id="n103" class="stm mis"><a href="#n103">103</a></p>
+<p id="n104" class="stm mis"><a href="#n104">104</a></p>
+<p id="n105" class="pln"><a href="#n105">105</a></p>
+<p id="n106" class="pln"><a href="#n106">106</a></p>
+<p id="n107" class="stm mis"><a href="#n107">107</a></p>
+<p id="n108" class="stm mis"><a href="#n108">108</a></p>
+<p id="n109" class="pln"><a href="#n109">109</a></p>
+<p id="n110" class="stm mis"><a href="#n110">110</a></p>
+<p id="n111" class="pln"><a href="#n111">111</a></p>
+<p id="n112" class="pln"><a href="#n112">112</a></p>
+<p id="n113" class="pln"><a href="#n113">113</a></p>
+<p id="n114" class="pln"><a href="#n114">114</a></p>
+<p id="n115" class="pln"><a href="#n115">115</a></p>
+<p id="n116" class="pln"><a href="#n116">116</a></p>
+<p id="n117" class="stm run hide_run"><a href="#n117">117</a></p>
+<p id="n118" class="pln"><a href="#n118">118</a></p>
+<p id="n119" class="stm mis"><a href="#n119">119</a></p>
+<p id="n120" class="stm mis"><a href="#n120">120</a></p>
+<p id="n121" class="stm mis"><a href="#n121">121</a></p>
+<p id="n122" class="pln"><a href="#n122">122</a></p>
+<p id="n123" class="stm mis"><a href="#n123">123</a></p>
+<p id="n124" class="pln"><a href="#n124">124</a></p>
+<p id="n125" class="stm mis"><a href="#n125">125</a></p>
+<p id="n126" class="stm mis"><a href="#n126">126</a></p>
+<p id="n127" class="pln"><a href="#n127">127</a></p>
+<p id="n128" class="stm mis"><a href="#n128">128</a></p>
+<p id="n129" class="pln"><a href="#n129">129</a></p>
+<p id="n130" class="stm mis"><a href="#n130">130</a></p>
+<p id="n131" class="stm mis"><a href="#n131">131</a></p>
+<p id="n132" class="stm mis"><a href="#n132">132</a></p>
+<p id="n133" class="pln"><a href="#n133">133</a></p>
+<p id="n134" class="pln"><a href="#n134">134</a></p>
+<p id="n135" class="stm mis"><a href="#n135">135</a></p>
+<p id="n136" class="pln"><a href="#n136">136</a></p>
+<p id="n137" class="stm mis"><a href="#n137">137</a></p>
+<p id="n138" class="pln"><a href="#n138">138</a></p>
+
+            </td>
+            <td class="text">
+<p id="t1" class="pln"><span class="str">"""</span><span class="strut">&nbsp;</span></p>
+<p id="t2" class="pln"><span class="str">Module d&#233;finissant la classe viewer, qui contient toutes les fonctions d'affichage</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="str">"""</span><span class="strut">&nbsp;</span></p>
+<p id="t4" class="stm run hide_run"><span class="key">import</span> <span class="nam">plotly</span><span class="op">.</span><span class="nam">express</span> <span class="key">as</span> <span class="nam">px</span><span class="strut">&nbsp;</span></p>
+<p id="t5" class="stm run hide_run"><span class="key">import</span> <span class="nam">pandas</span> <span class="key">as</span> <span class="nam">pd</span><span class="strut">&nbsp;</span></p>
+<p id="t6" class="stm run hide_run"><span class="key">import</span> <span class="nam">plotly</span><span class="op">.</span><span class="nam">graph_objects</span> <span class="key">as</span> <span class="nam">go</span><span class="strut">&nbsp;</span></p>
+<p id="t7" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t8" class="stm run hide_run"><span class="key">from</span> <span class="nam">data</span><span class="op">.</span><span class="nam">transcription</span> <span class="key">import</span> <span class="nam">transcription</span><span class="strut">&nbsp;</span></p>
+<p id="t9" class="stm run hide_run"><span class="key">from</span> <span class="nam">datavisualization</span><span class="op">.</span><span class="nam">traitement</span> <span class="key">import</span> <span class="nam">Data</span><span class="strut">&nbsp;</span></p>
+<p id="t10" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t11" class="stm run hide_run"><span class="key">class</span> <span class="nam">Viewer</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t12" class="pln">    <span class="str">"""Classe viewer, utilis&#233;e pour l'affichage des donn&#233;es</span><span class="strut">&nbsp;</span></p>
+<p id="t13" class="pln"><span class="str">    Il faut faire bien attention &#224; pas m&#233;langer Viewer et Data, ces deux classes doivent rester clairement s&#233;par&#233;e</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="pln"><span class="str">    (ex : ne pas faire de traitements stats dans Viewer)"""</span><span class="strut">&nbsp;</span></p>
+<p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t16" class="stm run hide_run">    <span class="nam">liste_mois</span><span class="op">=</span><span class="op">[</span><span class="str">"Janvier"</span><span class="op">,</span><span class="str">"Fevrier"</span><span class="op">,</span><span class="str">"Mars"</span><span class="op">,</span><span class="str">"Avril"</span><span class="op">,</span><span class="str">"Mai"</span><span class="op">,</span><span class="str">"Juin"</span><span class="op">,</span><span class="str">"Juillet"</span><span class="op">,</span><span class="str">"Aout"</span><span class="op">,</span><span class="str">"Septembre"</span><span class="op">,</span><span class="str">"Octobre"</span><span class="op">,</span><span class="str">"Novembre"</span><span class="op">,</span><span class="str">"Decembre"</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t17" class="stm run hide_run">    <span class="nam">data</span><span class="op">=</span><span class="nam">Data</span><span class="op">(</span><span class="op">)</span> <span class="com">#permet d'all&#233;ger la syntaxe lors d'appels de Viewer, et on peut cr&#233;er plusieurs instanes de viewer sans temps de chargement</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t19" class="stm run hide_run">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="stm run hide_run">        <span class="key">return</span><span class="strut">&nbsp;</span></p>
+<p id="t21" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t22" class="stm run hide_run">    <span class="key">def</span> <span class="nam">plot_mois_accident</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span><span class="nam">year</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln">        <span class="str">"""Repr&#233;sente sur un histogramme les accidents en fonction du mois"""</span><span class="strut">&nbsp;</span></p>
+<p id="t24" class="stm run hide_run">        <span class="nam">file_dict</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">filter_data</span><span class="op">(</span><span class="nam">year</span><span class="op">=</span><span class="nam">year</span><span class="op">,</span><span class="nam">category</span><span class="op">=</span><span class="str">"caracteristiques"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="stm run hide_run">        <span class="nam">df</span> <span class="op">=</span> <span class="op">[</span><span class="nam">file_dict</span><span class="op">[</span><span class="nam">elt</span><span class="op">]</span> <span class="key">for</span> <span class="nam">elt</span> <span class="key">in</span> <span class="nam">file_dict</span><span class="op">]</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span class="com">#fa&#231;on alambiqu&#233;e de r&#233;cup&#233;rer le seul dataframe dans file_dict</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="stm run hide_run">        <span class="nam">fig</span><span class="op">=</span> <span class="nam">px</span><span class="op">.</span><span class="nam">histogram</span><span class="op">(</span><span class="nam">df</span><span class="op">,</span><span class="nam">x</span><span class="op">=</span><span class="str">'mois'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t27" class="stm run hide_run">        <span class="nam">tick</span> <span class="op">=</span> <span class="op">[</span><span class="nam">x</span> <span class="key">for</span> <span class="nam">x</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">1</span><span class="op">,</span><span class="num">13</span><span class="op">)</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="stm run hide_run">        <span class="nam">fig</span><span class="op">.</span><span class="nam">update_layout</span><span class="op">(</span><span class="nam">xaxis</span><span class="op">=</span><span class="op">{</span><span class="str">"ticktext"</span><span class="op">:</span><span class="nam">self</span><span class="op">.</span><span class="nam">liste_mois</span><span class="op">,</span><span class="str">"tickvals"</span><span class="op">:</span><span class="nam">tick</span><span class="op">,</span><span class="str">"tickmode"</span><span class="op">:</span><span class="str">'array'</span><span class="op">}</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="stm run hide_run">        <span class="key">return</span> <span class="nam">fig</span><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t31" class="stm run hide_run">    <span class="key">def</span> <span class="nam">plot_accidents_annees</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span><span class="nam">minYear</span><span class="op">,</span><span class="nam">maxYear</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="pln">        <span class="str">"""repr&#233;sente le total des accidents par ann&#233;e au cours du temps"""</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="pln">        <span class="com">#dictionnaire contenant pour chaque ann&#233;e le nombre d'accidents</span><span class="strut">&nbsp;</span></p>
+<p id="t34" class="stm run hide_run">        <span class="nam">total_acc_dict</span><span class="op">=</span><span class="op">{</span><span class="nam">year</span><span class="op">:</span><span class="nam">len</span><span class="op">(</span><span class="nam">list</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">filter_data</span><span class="op">(</span><span class="nam">year</span><span class="op">=</span><span class="nam">year</span><span class="op">,</span><span class="nam">category</span><span class="op">=</span><span class="str">'caracteristiques'</span><span class="op">)</span><span class="op">.</span><span class="nam">values</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">)</span> <span class="key">for</span> <span class="nam">year</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="nam">minYear</span><span class="op">,</span><span class="nam">maxYear</span><span class="op">+</span><span class="num">1</span><span class="op">)</span><span class="op">}</span><span class="strut">&nbsp;</span></p>
+<p id="t35" class="stm run hide_run">        <span class="nam">df</span> <span class="op">=</span> <span class="nam">pd</span><span class="op">.</span><span class="nam">DataFrame</span><span class="op">.</span><span class="nam">from_dict</span><span class="op">(</span><span class="op">{</span><span class="str">'total des accidents'</span><span class="op">:</span><span class="nam">total_acc_dict</span><span class="op">}</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="stm run hide_run">        <span class="nam">df</span><span class="op">=</span><span class="nam">df</span><span class="op">.</span><span class="nam">reset_index</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t37" class="stm run hide_run">        <span class="nam">df</span><span class="op">=</span><span class="nam">df</span><span class="op">.</span><span class="nam">rename</span><span class="op">(</span><span class="nam">columns</span><span class="op">=</span><span class="op">{</span><span class="str">'index'</span><span class="op">:</span><span class="str">'ann&#233;es'</span><span class="op">}</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="stm run hide_run">        <span class="nam">fig</span> <span class="op">=</span> <span class="nam">px</span><span class="op">.</span><span class="nam">bar</span><span class="op">(</span><span class="nam">df</span><span class="op">,</span><span class="nam">x</span><span class="op">=</span><span class="str">"ann&#233;es"</span><span class="op">,</span><span class="nam">y</span><span class="op">=</span><span class="str">'total des accidents'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="stm run hide_run">        <span class="key">return</span> <span class="nam">fig</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t41" class="stm run hide_run">    <span class="key">def</span> <span class="nam">carte_accidents</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span><span class="nam">year</span><span class="op">,</span><span class="nam">filtre</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln">        <span class="str">"""repr&#233;sente la carte des accidents pour l'ann&#233;e year"""</span><span class="strut">&nbsp;</span></p>
+<p id="t43" class="stm run hide_run">        <span class="nam">df</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">clean_gps_coord_acc</span><span class="op">(</span><span class="nam">year</span><span class="op">,</span><span class="nam">filtre</span><span class="op">=</span><span class="nam">filtre</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t44" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t45" class="stm run hide_run">        <span class="nam">fig</span> <span class="op">=</span> <span class="nam">go</span><span class="op">.</span><span class="nam">Figure</span><span class="op">(</span><span class="nam">go</span><span class="op">.</span><span class="nam">Scattermapbox</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
+<p id="t46" class="pln">            <span class="nam">lat</span><span class="op">=</span><span class="nam">df</span><span class="op">.</span><span class="nam">lat</span><span class="op">,</span> <span class="com">#colonne des latitudes</span><span class="strut">&nbsp;</span></p>
+<p id="t47" class="pln">            <span class="nam">lon</span><span class="op">=</span><span class="nam">df</span><span class="op">.</span><span class="nam">long</span><span class="op">,</span> <span class="com">#colonne des longitudes</span><span class="strut">&nbsp;</span></p>
+<p id="t48" class="pln">            <span class="nam">mode</span><span class="op">=</span><span class="str">'markers'</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t49" class="pln">            <span class="nam">text</span><span class="op">=</span><span class="nam">pd</span><span class="op">.</span><span class="nam">DataFrame</span><span class="op">(</span><span class="op">{</span><span class="str">'lum'</span><span class="op">:</span><span class="nam">df</span><span class="op">.</span><span class="nam">lum_txt</span><span class="op">,</span><span class="str">'atm'</span><span class="op">:</span><span class="nam">df</span><span class="op">.</span><span class="nam">atm_txt</span><span class="op">}</span><span class="op">)</span><span class="op">,</span> <span class="com">#donn&#233;es repr&#233;sent&#233;es lorsqu'on met sa souris sur un point</span><span class="strut">&nbsp;</span></p>
+<p id="t50" class="pln">            <span class="nam">marker</span><span class="op">=</span><span class="nam">go</span><span class="op">.</span><span class="nam">scattermapbox</span><span class="op">.</span><span class="nam">Marker</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
+<p id="t51" class="pln">                <span class="nam">size</span><span class="op">=</span><span class="num">14</span><span class="op">,</span> <span class="com">#taille du marker</span><span class="strut">&nbsp;</span></p>
+<p id="t52" class="pln">                <span class="nam">color</span><span class="op">=</span><span class="nam">df</span><span class="op">[</span><span class="str">'lum'</span><span class="op">]</span><span class="op">,</span> <span class="com">#donn&#233;es &#224; partir de laquelle on &#233;chelonne les couleurs, ici la luminosit&#233;</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="pln">                <span class="nam">colorscale</span><span class="op">=</span><span class="op">[</span><span class="op">[</span><span class="num">0</span><span class="op">,</span><span class="str">"yellow"</span><span class="op">]</span><span class="op">,</span><span class="op">[</span><span class="num">0.25</span><span class="op">,</span><span class="str">"orange"</span><span class="op">]</span><span class="op">,</span><span class="op">[</span><span class="num">0.5</span><span class="op">,</span><span class="str">"black"</span><span class="op">]</span><span class="op">,</span><span class="op">[</span><span class="num">1</span><span class="op">,</span><span class="str">"blue"</span><span class="op">]</span><span class="op">]</span><span class="op">,</span> <span class="com">#&#233;chelle de couleurs, r&#233;gl&#233;e &#224; la main pour &#234;tre repr&#233;sentative</span><span class="strut">&nbsp;</span></p>
+<p id="t54" class="pln">            <span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t55" class="pln">            <span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t56" class="stm run hide_run">        <span class="nam">fig</span><span class="op">.</span><span class="nam">update_layout</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
+<p id="t57" class="pln">            <span class="nam">hovermode</span><span class="op">=</span><span class="str">'closest'</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t58" class="pln">            <span class="nam">height</span><span class="op">=</span><span class="num">700</span><span class="op">,</span> <span class="com">#hauteur de la fen&#234;tre</span><span class="strut">&nbsp;</span></p>
+<p id="t59" class="pln">            <span class="nam">mapbox</span><span class="op">=</span><span class="nam">go</span><span class="op">.</span><span class="nam">layout</span><span class="op">.</span><span class="nam">Mapbox</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
+<p id="t60" class="pln">                <span class="nam">style</span><span class="op">=</span><span class="str">"carto-positron"</span><span class="op">,</span> <span class="com">#cl&#233; d'api lien sur mapbox li&#233;e au compte de gauvain</span><span class="strut">&nbsp;</span></p>
+<p id="t61" class="pln">                <span class="nam">bearing</span><span class="op">=</span><span class="num">0</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t62" class="pln">                <span class="nam">center</span><span class="op">=</span><span class="nam">go</span><span class="op">.</span><span class="nam">layout</span><span class="op">.</span><span class="nam">mapbox</span><span class="op">.</span><span class="nam">Center</span><span class="op">(</span> <span class="com">#point sur lequel est centr&#233; la carte</span><span class="strut">&nbsp;</span></p>
+<p id="t63" class="pln">                    <span class="nam">lat</span><span class="op">=</span><span class="num">46.7</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t64" class="pln">                    <span class="nam">lon</span><span class="op">=</span><span class="num">1.7</span> <span class="com">#centre de la france</span><span class="strut">&nbsp;</span></p>
+<p id="t65" class="pln">                <span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t66" class="pln">                <span class="nam">pitch</span><span class="op">=</span><span class="num">0</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t67" class="pln">                <span class="nam">zoom</span><span class="op">=</span><span class="num">4.7</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t68" class="pln">            <span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t69" class="pln">        <span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t70" class="stm run hide_run">        <span class="key">return</span> <span class="nam">fig</span><span class="strut">&nbsp;</span></p>
+<p id="t71" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t72" class="stm run hide_run">    <span class="key">def</span> <span class="nam">graphique_2D</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">column_abs</span><span class="op">,</span> <span class="nam">column_ord</span><span class="op">,</span> <span class="nam">year</span><span class="op">,</span> <span class="nam">category_abs</span><span class="op">,</span> <span class="nam">category_ord</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t73" class="stm mis">        <span class="nam">df</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">dataframe_2D</span><span class="op">(</span><span class="nam">column_abs</span><span class="op">,</span> <span class="nam">column_ord</span><span class="op">,</span> <span class="nam">year</span><span class="op">,</span> <span class="nam">category_abs</span><span class="op">,</span> <span class="nam">category_ord</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t74" class="stm mis">        <span class="nam">S</span> <span class="op">=</span> <span class="op">[</span><span class="nam">pow</span><span class="op">(</span><span class="nam">x</span><span class="op">,</span> <span class="num">1</span><span class="op">/</span><span class="num">3</span><span class="op">)</span> <span class="key">for</span> <span class="nam">x</span> <span class="key">in</span> <span class="nam">df</span><span class="op">[</span><span class="str">"Num_Acc"</span><span class="op">]</span><span class="op">.</span><span class="nam">values</span><span class="op">.</span><span class="nam">tolist</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t75" class="stm mis">        <span class="nam">df</span> <span class="op">=</span> <span class="nam">df</span><span class="op">.</span><span class="nam">reset_index</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t76" class="stm mis">        <span class="nam">df</span> <span class="op">=</span> <span class="nam">df</span><span class="op">[</span><span class="op">[</span><span class="nam">column_abs</span><span class="op">,</span> <span class="nam">column_ord</span><span class="op">]</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t77" class="stm mis">        <span class="nam">fig</span> <span class="op">=</span> <span class="nam">px</span><span class="op">.</span><span class="nam">scatter</span><span class="op">(</span><span class="nam">df</span><span class="op">,</span> <span class="nam">x</span> <span class="op">=</span> <span class="nam">column_abs</span><span class="op">,</span> <span class="nam">y</span> <span class="op">=</span> <span class="nam">column_ord</span><span class="op">,</span> <span class="nam">size</span> <span class="op">=</span> <span class="nam">S</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t78" class="stm mis">        <span class="nam">fig</span><span class="op">.</span><span class="nam">update_layout</span><span class="op">(</span><span class="nam">width</span> <span class="op">=</span> <span class="num">800</span><span class="op">,</span> <span class="nam">height</span> <span class="op">=</span> <span class="num">800</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t79" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t80" class="stm mis">        <span class="key">if</span> <span class="nam">column_abs</span> <span class="key">in</span> <span class="nam">transcription</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t81" class="stm mis">            <span class="nam">x</span> <span class="op">=</span> <span class="nam">transcription</span><span class="op">[</span><span class="nam">column_abs</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t82" class="stm mis">            <span class="nam">X</span> <span class="op">=</span> <span class="op">[</span><span class="nam">i</span> <span class="key">for</span> <span class="nam">i</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">1</span><span class="op">,</span> <span class="nam">len</span><span class="op">(</span><span class="nam">x</span><span class="op">)</span> <span class="op">+</span> <span class="num">1</span><span class="op">)</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t83" class="pln">        <span class="key">else</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t84" class="stm mis">            <span class="nam">x</span> <span class="op">=</span> <span class="key">None</span><span class="strut">&nbsp;</span></p>
+<p id="t85" class="stm mis">            <span class="nam">X</span> <span class="op">=</span> <span class="key">None</span><span class="strut">&nbsp;</span></p>
+<p id="t86" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t87" class="stm mis">        <span class="key">if</span> <span class="nam">column_ord</span> <span class="key">in</span> <span class="nam">transcription</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t88" class="stm mis">            <span class="nam">y</span> <span class="op">=</span> <span class="nam">transcription</span><span class="op">[</span><span class="nam">column_ord</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t89" class="stm mis">            <span class="nam">Y</span> <span class="op">=</span> <span class="op">[</span><span class="nam">i</span> <span class="key">for</span> <span class="nam">i</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">1</span><span class="op">,</span> <span class="nam">len</span><span class="op">(</span><span class="nam">y</span><span class="op">)</span> <span class="op">+</span> <span class="num">1</span><span class="op">)</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t90" class="pln">        <span class="key">else</span> <span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t91" class="stm mis">            <span class="nam">y</span> <span class="op">=</span> <span class="key">None</span><span class="strut">&nbsp;</span></p>
+<p id="t92" class="stm mis">            <span class="nam">Y</span> <span class="op">=</span> <span class="key">None</span><span class="strut">&nbsp;</span></p>
+<p id="t93" class="stm mis">        <span class="nam">fig</span><span class="op">.</span><span class="nam">update_layout</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
+<p id="t94" class="pln">        <span class="nam">xaxis</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span><span class="nam">tickmode</span> <span class="op">=</span> <span class="str">'array'</span><span class="op">,</span> <span class="nam">tickvals</span> <span class="op">=</span> <span class="nam">X</span><span class="op">,</span> <span class="nam">ticktext</span> <span class="op">=</span> <span class="nam">x</span><span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t95" class="pln">        <span class="nam">yaxis</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span><span class="nam">tickmode</span> <span class="op">=</span> <span class="str">'array'</span><span class="op">,</span> <span class="nam">tickvals</span> <span class="op">=</span> <span class="nam">Y</span><span class="op">,</span> <span class="nam">ticktext</span> <span class="op">=</span> <span class="nam">y</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t96" class="stm mis">        <span class="key">return</span> <span class="nam">fig</span><span class="strut">&nbsp;</span></p>
+<p id="t97" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t98" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t99" class="stm run hide_run">    <span class="key">def</span> <span class="nam">plot_camembert</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">selected_column</span><span class="op">,</span> <span class="nam">selected_year</span><span class="op">,</span> <span class="nam">selected_category</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t100" class="pln">        <span class="str">"""renvoie un camembert de la colonne s&#233;lectionn&#233;e du fichier s&#233;lectionn&#233; pour l'ann&#233;e s&#233;lectionn&#233;e"""</span><span class="strut">&nbsp;</span></p>
+<p id="t101" class="stm mis">        <span class="nam">data_filtered</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">valeurs_pourcentages</span><span class="op">(</span><span class="nam">column_name</span> <span class="op">=</span> <span class="nam">selected_column</span><span class="op">,</span> <span class="nam">category</span> <span class="op">=</span> <span class="nam">selected_category</span><span class="op">,</span> <span class="nam">years</span> <span class="op">=</span> <span class="op">(</span><span class="nam">selected_year</span><span class="op">)</span><span class="op">)</span> <span class="com">#on filtre les donn&#233;es n&#233;cessaires</span><span class="strut">&nbsp;</span></p>
+<p id="t102" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t103" class="stm mis">        <span class="key">if</span> <span class="nam">selected_column</span> <span class="key">in</span> <span class="nam">transcription</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t104" class="stm mis">            <span class="nam">labels</span> <span class="op">=</span> <span class="nam">transcription</span><span class="op">[</span><span class="nam">selected_column</span><span class="op">]</span><span class="op">[</span><span class="num">0</span><span class="op">:</span><span class="nam">min</span><span class="op">(</span><span class="nam">len</span><span class="op">(</span><span class="nam">data_filtered</span><span class="op">.</span><span class="nam">keys</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">,</span> <span class="num">10</span><span class="op">)</span><span class="op">]</span> <span class="com">#si il y a plus de 10 possibilit&#233;s, on garde les 10 plus courantes</span><span class="strut">&nbsp;</span></p>
+<p id="t105" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t106" class="pln">        <span class="key">else</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t107" class="stm mis">            <span class="nam">labels</span> <span class="op">=</span> <span class="nam">list</span><span class="op">(</span><span class="nam">data_filtered</span><span class="op">.</span><span class="nam">keys</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">[</span><span class="num">0</span><span class="op">:</span> <span class="nam">min</span><span class="op">(</span><span class="nam">len</span><span class="op">(</span><span class="nam">data_filtered</span><span class="op">.</span><span class="nam">keys</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">-</span><span class="num">1</span><span class="op">,</span> <span class="num">10</span><span class="op">)</span><span class="op">]</span> <span class="com">#si on ne trouve pas la transcription des colonnes en bon fran&#231;ais</span><span class="strut">&nbsp;</span></p>
+<p id="t108" class="stm mis">        <span class="nam">values</span> <span class="op">=</span> <span class="op">[</span><span class="nam">data_filtered</span><span class="op">[</span><span class="nam">value</span><span class="op">]</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span class="key">for</span> <span class="nam">value</span> <span class="key">in</span> <span class="nam">data_filtered</span><span class="op">.</span><span class="nam">keys</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">[</span><span class="num">0</span><span class="op">:</span><span class="nam">len</span><span class="op">(</span><span class="nam">labels</span><span class="op">)</span><span class="op">]</span> <span class="com">#idem pour les valeurs</span><span class="strut">&nbsp;</span></p>
+<p id="t109" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t110" class="stm mis">        <span class="key">return</span> <span class="op">{</span><span class="strut">&nbsp;</span></p>
+<p id="t111" class="pln">            <span class="str">"data"</span><span class="op">:</span> <span class="op">[</span><span class="nam">go</span><span class="op">.</span><span class="nam">Pie</span><span class="op">(</span><span class="nam">labels</span><span class="op">=</span> <span class="nam">labels</span><span class="op">,</span> <span class="nam">values</span><span class="op">=</span> <span class="nam">values</span><span class="op">,</span> <span class="com">#on envoie le magnifique pie chart</span><span class="strut">&nbsp;</span></p>
+<p id="t112" class="pln">                            <span class="nam">textinfo</span><span class="op">=</span><span class="str">'label'</span><span class="op">)</span><span class="op">]</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t113" class="pln">            <span class="str">"layout"</span><span class="op">:</span> <span class="nam">go</span><span class="op">.</span><span class="nam">Layout</span><span class="op">(</span><span class="nam">title</span><span class="op">=</span> <span class="str">"Categorie : {}, colonne : {}, ann&#233;e : {}"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">selected_category</span><span class="op">,</span> <span class="nam">selected_column</span><span class="op">,</span> <span class="nam">selected_year</span><span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t114" class="pln">                                <span class="nam">legend</span><span class="op">=</span><span class="op">{</span><span class="str">"x"</span><span class="op">:</span> <span class="num">1</span><span class="op">,</span> <span class="str">"y"</span><span class="op">:</span> <span class="num">0.7</span><span class="op">}</span> <span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t115" class="pln">            <span class="op">}</span><span class="strut">&nbsp;</span></p>
+<p id="t116" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t117" class="stm run hide_run">    <span class="key">def</span> <span class="nam">timelapse_category_column</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span><span class="nam">selected_column</span><span class="op">,</span><span class="nam">selected_category</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t118" class="pln">        <span class="str">"""renvoie l'&#233;volution au fil du temps d'une colonne selected_column de la caegorie selected_category"""</span><span class="strut">&nbsp;</span></p>
+<p id="t119" class="stm mis">        <span class="nam">data_list</span> <span class="op">=</span> <span class="op">[</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t120" class="stm mis">        <span class="key">for</span> <span class="nam">i</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">2005</span><span class="op">,</span> <span class="num">2019</span><span class="op">)</span><span class="op">:</span> <span class="com">#on boucle sur les ann&#233;es</span><span class="strut">&nbsp;</span></p>
+<p id="t121" class="stm mis">            <span class="nam">selected_data</span> <span class="op">=</span> <span class="op">[</span><span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">data_dict</span><span class="op">[</span><span class="nam">file</span><span class="op">]</span> <span class="key">for</span> <span class="nam">file</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">data_dict</span> <span class="key">if</span> <span class="op">(</span><span class="nam">selected_category</span> <span class="key">in</span> <span class="nam">file</span><span class="op">)</span> <span class="key">and</span> <span class="op">(</span><span class="nam">str</span><span class="op">(</span><span class="nam">i</span><span class="op">)</span> <span class="key">in</span> <span class="nam">file</span><span class="op">)</span><span class="op">]</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span class="com">#fa&#231;on alambiqu&#233;e de r&#233;cup&#233;rer ce que l'on veut</span><span class="strut">&nbsp;</span></p>
+<p id="t122" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t123" class="stm mis">            <span class="nam">data_list</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">selected_data</span><span class="op">[</span><span class="nam">selected_column</span><span class="op">]</span><span class="op">.</span><span class="nam">value_counts</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">reset_index</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="com">#on compte les occurences de chaque valeur</span><span class="strut">&nbsp;</span></p>
+<p id="t124" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t125" class="stm mis">            <span class="nam">data_list</span><span class="op">[</span><span class="nam">i</span> <span class="op">-</span> <span class="num">2005</span><span class="op">]</span> <span class="op">=</span> <span class="nam">data_list</span><span class="op">[</span><span class="nam">i</span> <span class="op">-</span> <span class="num">2005</span><span class="op">]</span><span class="op">.</span><span class="nam">reindex</span><span class="op">(</span><span class="nam">columns</span><span class="op">=</span><span class="nam">list</span><span class="op">(</span><span class="nam">data_list</span><span class="op">[</span><span class="nam">i</span> <span class="op">-</span> <span class="num">2005</span><span class="op">]</span><span class="op">.</span><span class="nam">columns</span><span class="op">)</span> <span class="op">+</span> <span class="op">[</span><span class="str">'Year'</span><span class="op">]</span><span class="op">)</span> <span class="com"># on s'arrange avec l'index pour que &#231;a rende bien</span><span class="strut">&nbsp;</span></p>
+<p id="t126" class="stm mis">            <span class="nam">data_list</span><span class="op">[</span><span class="nam">i</span> <span class="op">-</span> <span class="num">2005</span><span class="op">]</span><span class="op">.</span><span class="nam">loc</span><span class="op">[</span><span class="op">:</span><span class="op">,</span> <span class="str">'Year'</span><span class="op">]</span> <span class="op">=</span> <span class="nam">i</span><span class="strut">&nbsp;</span></p>
+<p id="t127" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t128" class="stm mis">        <span class="nam">datapx</span> <span class="op">=</span> <span class="nam">pd</span><span class="op">.</span><span class="nam">concat</span><span class="op">(</span><span class="nam">data_list</span><span class="op">)</span> <span class="com">#on concat&#232;ne la liste pour l'affichage</span><span class="strut">&nbsp;</span></p>
+<p id="t129" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t130" class="stm mis">        <span class="key">if</span> <span class="nam">selected_column</span> <span class="key">in</span> <span class="nam">transcription</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t131" class="stm mis">            <span class="key">for</span> <span class="nam">i</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">0</span><span class="op">,</span> <span class="nam">len</span><span class="op">(</span><span class="nam">transcription</span><span class="op">[</span><span class="nam">selected_column</span><span class="op">]</span><span class="op">)</span><span class="op">)</span><span class="op">:</span> <span class="com">#on remet l'index en fran&#231;ais</span><span class="strut">&nbsp;</span></p>
+<p id="t132" class="stm mis">                <span class="nam">datapx</span><span class="op">.</span><span class="nam">loc</span><span class="op">[</span><span class="nam">datapx</span><span class="op">[</span><span class="str">'index'</span><span class="op">]</span><span class="op">==</span><span class="nam">i</span> <span class="op">+</span><span class="num">1</span><span class="op">,</span> <span class="str">'index'</span><span class="op">]</span> <span class="op">=</span> <span class="nam">transcription</span><span class="op">[</span><span class="nam">selected_column</span><span class="op">]</span><span class="op">[</span><span class="nam">i</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t133" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t134" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t135" class="stm mis">        <span class="nam">fig</span> <span class="op">=</span> <span class="nam">px</span><span class="op">.</span><span class="nam">line</span><span class="op">(</span><span class="nam">datapx</span><span class="op">,</span> <span class="nam">x</span><span class="op">=</span><span class="str">'Year'</span><span class="op">,</span> <span class="nam">y</span> <span class="op">=</span> <span class="nam">selected_column</span><span class="op">,</span> <span class="nam">color</span> <span class="op">=</span> <span class="str">'index'</span><span class="op">)</span> <span class="com"># affichage de la figure</span><span class="strut">&nbsp;</span></p>
+<p id="t136" class="pln">        <span class="com">#fig.update_layout(width = 600, height = 600)            </span><span class="strut">&nbsp;</span></p>
+<p id="t137" class="stm mis">        <span class="key">return</span> <span class="nam">fig</span><span class="strut">&nbsp;</span></p>
+<p id="t138" class="pln"><span class="strut">&nbsp;</span></p>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
+            created at 2019-11-22 11:10
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
